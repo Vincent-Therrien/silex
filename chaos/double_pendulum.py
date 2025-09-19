@@ -4,14 +4,15 @@ import pygame
 import numpy as np
 
 # Initial conditions
-d = 0.1 / 360
+d_degrees = 1.0 / 360.0
+d_radians = d_degrees * pi / 180.0
 rotations = (
     [pi / 2, pi / 2],
-    [pi / 2, pi / 2 + d]
+    [pi / 2, pi / 2 + d_radians]
 )
 
 # Constants
-SCREEN_DIMENSION = (600, 600)
+SCREEN_DIMENSION = (800, 600)
 BACKGROUND_COLOR = (0, 0, 0)
 PIVOT_COLOR = (1, 1, 1)
 ARM_COLORS = (
@@ -25,12 +26,12 @@ ARM_COLORS = (
     )
 )
 G = 9.8  # acceleration due to gravity, in m/s^2
-L1 = 1.5  # length of pendulum 1 in m
-L2 = 1  # length of pendulum 2 in m
+L1 = 1  # length of the innermost rod in m
+L2 = 1  # length of the outermost rod in m
 L = L1 + L2  # maximal length of the combined pendulum
 M1 = 1.0  # mass of pendulum 1 in kg
 M2 = 1.0  # mass of pendulum 2 in kg
-P = 100  # Meter to pixel conversion scale
+P = 120  # Meter to pixel conversion scale
 
 screen = pygame.display.set_mode(SCREEN_DIMENSION)
 pygame.init()
@@ -68,8 +69,8 @@ def derivs(state):
     return dydx
 
 
-def display_arms(r, colors):
-    origin = (SCREEN_DIMENSION[0] / 2, SCREEN_DIMENSION[0] / 2)
+def display_arms(r, colors, x_offset=0):
+    origin = (SCREEN_DIMENSION[0] / 2 + x_offset, SCREEN_DIMENSION[1] / 2)
     thetaA = r[0] + pi / 2
     a = (
         origin[0] + cos(thetaA) * L1 * P,
@@ -95,12 +96,12 @@ elapsed_time = 0
 while True:
     a = time.time()
     screen.fill(BACKGROUND_COLOR)
-    for i in range(len(states)):
+    for i, offset in zip(range(len(states)), (P * -1.1, P * 1.1)):
         y = states[i]
         y = y + np.array(derivs(y)) * delta
         states[i] = y
         rotations[i][0], rotations[i][1] = y[0], y[2]
-        display_arms(rotations[i], ARM_COLORS[i])
+        display_arms(rotations[i], ARM_COLORS[i], offset)
     time_str = format_time(elapsed_time)
     time_text = font.render(time_str, True, (255, 255, 255))
     screen.blit(time_text, (SCREEN_DIMENSION[0] / 3, 100))
