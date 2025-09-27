@@ -74,6 +74,9 @@ evolve. This sensitivity is called *chaos*. To visualize this effect on a
 simple system, refer to the file `chaos/readme.rst <chaos/readme.rst>`__.
 
 
+---------
+
+
 Logiciels de prédiction de feux de forêt
 ----------------------------------------
 
