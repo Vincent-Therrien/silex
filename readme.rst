@@ -5,7 +5,7 @@ silex
 - `Français (fr) <#logiciels-de-prédiction-de-feux-de-forêt>`_
 
 .. image:: assets/example.png
-   :width: 500
+   :width: 350
    :align: center
    :alt: Result of a FARSITE wildfire propagation simulation plotted over
          canopy height and arrival time.

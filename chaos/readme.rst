@@ -1,6 +1,12 @@
 Chaos Visualization with Double Pendulums
 =========================================
 
+.. image:: ../assets/pendulums.png
+   :width: 300
+   :align: center
+   :alt: Double pendulums mid-motion
+
+
 This directory comprises a Python program that simulates two double pendulums
 swinging around with a slightly different initial angle to illustrate
 sensitivity to initial conditions, i.e. chaos.
