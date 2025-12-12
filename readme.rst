@@ -16,7 +16,7 @@ Wildfire Prediction Software
 
 This repository presents wildfire modelling technologies. All references are
 available
-`here <https://vincent-therrien.github.io/videos/wildfires/script_rn.html#references>`__.
+`here <https://vincent-therrien.github.io/videos/7_wildfires/script_rn.html#references>`__.
 This  `video <https://youtu.be/3mawXsPqdbs>`__ provides an overview of the project.
 
 
@@ -85,7 +85,7 @@ Logiciels de prédiction de feux de forêt
 
 Ce dépôt présente des technologies de modélisation des feux de forêt.
 Toutes les références sont disponibles
-`ici <https://vincent-therrien.github.io/videos/wildfires/script_fr.html#references>`__.
+`ici <https://vincent-therrien.github.io/videos/7_wildfires/script_fr.html#references>`__.
 Cette `vidéo <https://youtu.be/3mawXsPqdbs>`__ présente un survol du projet.
 
 
