@@ -14,7 +14,10 @@ silex
 Wildfire Prediction Software
 ----------------------------
 
-This repository presents wildfire modelling technologies.
+This repository presents wildfire modelling technologies. All references are
+available
+`here <https://vincent-therrien.github.io/videos/wildfires/script_rn.html#references>`__.
+This  `video <https://youtu.be/3mawXsPqdbs>`__ provides an overview of the project.
 
 
 Empirical Models
@@ -81,6 +84,9 @@ Logiciels de prédiction de feux de forêt
 ----------------------------------------
 
 Ce dépôt présente des technologies de modélisation des feux de forêt.
+Toutes les références sont disponibles
+`ici <https://vincent-therrien.github.io/videos/wildfires/script_fr.html#references>`__.
+Cette `vidéo <https://youtu.be/3mawXsPqdbs>`__ présente un survol du projet.
 
 
 Modèles empiriques
@@ -88,7 +94,7 @@ Modèles empiriques
 
 Les modèles **empiriques** sont basés sur des observations. Les chercheurs
 analysent le comportement des feux de forêt et en dérivent des équations qui
-les approximent pour en prédire l'évolution.
+les approximent pour prédire leur évolution.
 
 Exemples de modèles empiriques :
 
@@ -110,7 +116,7 @@ Modèles physiques
 Les modèles **physiques** sont basés sur la **dynamique des fluides**. Au lieu
 d'utiliser des équation pour approximer les feux, ils simulent des phénomènes
 physiques, ce qui demande généralement plus de ressources informatiques mais
-entraînement des résultats plus précis.
+entraîne des résultats plus précis.
 
 Exemples de modèles physiques :
 
