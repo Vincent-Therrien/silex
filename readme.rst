@@ -16,7 +16,7 @@ Wildfire Prediction Software
 
 This repository presents wildfire modelling technologies. All references are
 available
-`here <https://vincent-therrien.github.io/videos/7_wildfires/script_rn.html#references>`__.
+`here <https://vincent-therrien.github.io/videos/7_wildfires/script_en.html#references>`__.
 This  `video <https://youtu.be/3mawXsPqdbs>`__ provides an overview of the project.
 
 
