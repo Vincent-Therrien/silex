@@ -138,7 +138,7 @@ Exemples de modèles d'apprentissage automatique :
 
 - `Finney et al <https://research.fs.usda.gov/firelab/understory/deep-learning-high-resolution-wildfire-modeling>`__
 - `Zhang et al <https://www.sciencedirect.com/science/article/pii/S1470160X21004003>`__
-- - `GraphCast <https://www.science.org/stoken/author-tokens/ST-1550/full>`__ (météo globale, pas seulement les feux de forêt)
+- `GraphCast <https://www.science.org/stoken/author-tokens/ST-1550/full>`__ (météo globale, pas seulement les feux de forêt)
 
 
 Visualisation du chaos
